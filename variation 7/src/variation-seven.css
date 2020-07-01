@@ -1,0 +1,58 @@
+.site-banner{
+    background-image: url('../assets/Rectangle\ 4.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+      }
+      .care-text{
+        width: 350px;
+        height: 57px;
+        left: 131px;
+        top: 360px;
+        
+        color: #FFFFFF;
+      }
+
+      .banner-image{
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            background: url(../assets/Rectangle\ 10.png);
+      }
+
+          
+
+          @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+:root{
+   --primaryColor: #092C4C;
+   --secondaryColor: #F2994A;
+   --textColor:#FCFCFC;
+   --textBlackColor:#4F4F4F;
+   --primaryVarColor:#0146C0;
+   --secondaryVarColor:#3774DF;
+   --accentVarColor:rgba(180, 206, 253, 0.89);;
+   --neutralColor:#FFFFFF;
+   --neutralBlackColor:#000000;
+   --shadowEffectColor:#c4c4c4;
+   --shadowEffect1shadow:0px 10px 24px rgba(0, 0, 0, 0.1);
+   --shadowEffect2shadow:0px 5px 20px rgba(27, 30, 51, 0.2);
+   --shadowEffect3shadow: 0px 4px 4px rgba(9, 44, 76, 0.13);
+   --transition: all 1s linear;
+}
+
+.footer-info div{
+    margin-bottom: 70px;
+    text-align: center;
+ }
+ .welcome .welcome-info{
+    margin-top: 50px;
+ }
+ #contact .enter-info .form-group {
+    padding: 30px !important;
+ }
