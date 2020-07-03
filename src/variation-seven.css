@@ -1,136 +1,356 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-:root{
-   --primaryColor: #092C4C;
-   --secondaryColor: #F2994A;
-   --textColor:#FCFCFC;
-   --textBlackColor:#4F4F4F;
-   --primaryVarColor:#0146C0;
-   --secondaryVarColor:#3774DF;
-   --accentVarColor:rgba(180, 206, 253, 0.89);;
-   --neutralColor:#FFFFFF;
-   --neutralBlackColor:#000000;
-   --shadowEffectColor:#c4c4c4;
-   --shadowEffect1shadow:0px 10px 24px rgba(0, 0, 0, 0.1);
-   --shadowEffect2shadow:0px 5px 20px rgba(27, 30, 51, 0.2);
-   --shadowEffect3shadow: 0px 4px 4px rgba(9, 44, 76, 0.13);
-   --transition: all 1s linear;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    height: 85px;
-    background-color: #FFFFFF;
+body {
+font-family: "Roboto";
 }
 
-.header {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+.button:hover {
+color: #FFF;
 }
 
-ul li {
-    list-style: none;
+.section {
+padding-top: 50px;
+}
+
+.section-header{
+font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 39px;
+color: #092C4C;
+}
+.section-body {
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: #092C4C;
+}
+
+.wrapper {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
 
 }
 
-.nav-links ul {
-    display: flex;
-}
-
-.nav-links ul li {
-    padding: 20px;
-}
-
+@media (min-width: 600px){
 .site-banner {
-    background: url(../assets/Rectangle\ 4.png);
+ background: url(../assets/Rectangle\ 4.png);
+ background-size: cover;
+ background-position: top;
+ position: relative;
+ height: 100vh;
+ width: 100vw;
+
+}
+.row-container{
+    color: #FFF;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-end;
 }
 
-.banner-box {
-    display: flex;
-    align-items: center;
+.main-heading{
+    margin-top: 150px;
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 66px;
 }
 
-.banner-content {
-    max-width: 400px;
+.sub-heading{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.paragraph {
+    padding-bottom: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 19px;
     color: #FFFFFF;
 }
-
-.banner-content button {
-    font-size: small;
+.button {
     background: linear-gradient(0deg, #092C4C, #092C4C), #FFFFFF;
     opacity: 0.7;
-    color: white;
     border: 5px solid #092C4C;
     box-sizing: border-box;
     border-radius: 8px;
+    width: 241px;
+    height: 48px;
+    color: #FFF;
+}
 }
 
-main {
-    margin-top: 50px;
+@media screen and (max-width: 700px) and (min-width: 600px) {
+    .site-banner {
+     background: url(../assets/Rectangle\ 4.png);
+     background-size: cover;
+     background-position: top;
+     position: relative;
+     height: 100vh;
+     width: 100vw;
+
+}
+.row-container{
+    color: #FFF;
+    display: flex;
+    justify-content: flex-end;
 }
 
-section {
-    padding: 20px 0px;
-}
-
-.main-content {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.main-content h2 {
+.main-heading{
+    margin-top: 150px;
+    display: block;
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
-    line-height: 39px;
-    text-align: center;
-    color: #092C4C;
-    margin: 30px 0px;
+    font-size: 35px;
+    line-height: 50px;
 }
 
-.btn {
-    font-size: small;
+.sub-heading{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 19px;
+}
+
+.paragraph {
+    padding-bottom: 12px;
+    font-style: normal;
     font-weight: normal;
-    color: white;
-    background-color: #092C4C;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    padding: 10px 30px;
-    margin: 20px 0px;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* .card-box {
-    display: flex;
-    justify-content: space-between;
-}
-
-.card {
-    width: 290px;
-    border: none;
-}
-
-.card h3 {
     font-size: 20px;
-    padding: 10px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.button {
+    background: linear-gradient(0deg, #092C4C, #092C4C);
+    opacity: 0.7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 241px;
+    height: 48px;
+    color: #FFF;
+}
 }
 
-.card p {
-    padding: 0px 10px;
-} */
+.service-header {
+font-family: "Roboto";
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+color: #092C4C;
+}
+.service-paragraph {
+font-family: "Inter";
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+}
 
-/* .col ul {
-    display: flex;
-} */
+.contact-text {
+font-family: "Inter";
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 39px;
+}   
+
+/*
+*/
+@media (min-width: 768px) and (max-width: 991px) {
+/* Show 4th slide on md if col-md-4*/
+.carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;  /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
+}
+}
+@media (min-width: 576px) and (max-width: 768px) {
+/* Show 3rd slide on sm if col-sm-6*/
+.carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -50%;  /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
+}
+}
+@media (min-width: 576px) {
+.carousel-item {
+    margin-right: 0;
+}
+/* show 2 items */
+.carousel-inner .active + .carousel-item {
+    display: block;
+}
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+    transition: none;
+}
+.carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+}
+/* left or forward direction */
+.active.carousel-item-left + .carousel-item-next.carousel-item-left,
+.carousel-item-next.carousel-item-left + .carousel-item,
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+}
+/* farthest right hidden item must be also positioned for animations */
+.carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+}
+/* right or prev direction */
+.active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+.carousel-item-prev.carousel-item-right + .carousel-item,
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+}
+}
+/* MD */
+@media (min-width: 768px) {
+/* show 3rd of 3 item slide */
+.carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+}
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    transition: none;
+}
+.carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+}
+/* left or forward direction */
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+}
+/* right or prev direction */
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+}
+}
+/* LG */
+@media (min-width: 991px) {
+/* show 4th item */
+.carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+    display: block;
+}
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+    transition: none;
+}
+/* Show 5th slide on lg if col-lg-3 */
+.carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -25%;  /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
+}
+/* left or forward direction */
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+}
+/* right or prev direction //t - previous slide direction last item animation fix */
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+}
+}
+
+
+
+/******/
+@media (max-width: 568px){
+.site-banner {
+ background: url(../assets/Rectangle\ 4.png);
+ background-size: cover;
+ background-position: top;
+ position: relative;
+ height: 100vh;
+ width: 100vw;
+
+}
+.header-container{
+    color: #FFF;
+}
+
+.main-heading{
+    margin-top: 80px;
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.sub-heading{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.paragraph {
+    padding-bottom: 12px;
+    font-style: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.button {
+    background: linear-gradient(0deg, #092C4C, #092C4C);
+    opacity: 0.7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #FFFFFF;
+
+}
+.img-style{
+    width: 70%;
+}
+}
 
 
 footer {
